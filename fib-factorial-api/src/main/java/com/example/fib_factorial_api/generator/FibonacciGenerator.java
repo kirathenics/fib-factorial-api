@@ -7,13 +7,13 @@ public class FibonacciGenerator {
     public static List<Long> generate(int n) {
         List<Long> result = new ArrayList<>(n);
 
-        long a = 0, b = 1;
+        long current = 0, next = 1;
 
         for (int i = 1; i <= n; i++) {
-            result.add(a);
-            long temp = a + b;
-            a = b;
-            b = temp;
+            result.add(current);
+            long sum = current + next;
+            current = next;
+            next = sum;
         }
 
         return result;
