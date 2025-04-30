@@ -15,7 +15,7 @@ public class FibonacciRequestBody {
     @Valid
 
     @NotNull(message = "n couldn't be null")
-    @Min(value = 1, message = "Minimum value is 1")
-    @Max(value = 92, message = "Maximum value is 92")
+    @Min(value = 1, message = "Minimum value for n is 1")
+    @Max(value = 92, message = "Maximum value for n is 92")
     private Integer n;
 }
